@@ -46,17 +46,17 @@ const Login = (props) => {
     <ScrollView contentContainerStyle={styles.scrollContainer} keyboardShouldPersistTaps="always">
       <View style={styles.homeView}>
       <View style={styles.logoContainer}>
-        <Image style={styles.logo} source={require('../assets/jvlogo.png')}/>
+        <Image style={styles.logo} source={require('../assets/companylogo.png')}/>
       </View>
       <View style={styles.loginContainer}>
         <Text style={styles.text_header}>Login !!!</Text>
         <View style={styles.action}>
-            <FontAwesome name="user-o" color="#420475" style={styles.smallIcon}/>
-            <TextInput placeholder='Enter Email Id' style={styles.textInput} onChange={e => setEmail(e.nativeEvent.text)} />
+            <FontAwesome name="user-o" color="#9c33ff" style={styles.smallIcon}/>
+            <TextInput placeholderTextColor="#888" placeholder='Enter Email Id' style={styles.textInput} onChange={e => setEmail(e.nativeEvent.text)} />
         </View>
         <View style={styles.action}>
-            <FontAwesome name="lock" color="#420475" style={styles.smallIcon}/>
-            <TextInput placeholder='Enter Password' style={styles.textInput} onChange={e => setPassword(e.nativeEvent.text)} />
+            <FontAwesome name="lock" color="#9c33ff" style={styles.smallIcon}/>
+            <TextInput placeholderTextColor="#888" placeholder='Enter Password' style={styles.textInput} onChange={e => setPassword(e.nativeEvent.text)} />
         </View>
         <TouchableOpacity style={styles.forgetContainer} onPress={() => handleForget()}>
             <Text style={styles.forget}>Forget Password ?</Text>
@@ -122,8 +122,8 @@ const styles = StyleSheet.create({
     },
     textSign: {
       fontSize: 18,
-      fontWeight: 'bold',
-      color: 'white',
+      // fontWeight: 'bold',
+      color: 'black',
     },
     smallIcon: {
       marginRight: 10,
@@ -151,7 +151,7 @@ const styles = StyleSheet.create({
       paddingHorizontal: 15,
 
       borderWidth: 1,
-      borderColor: '#420475',
+      borderColor: '#9c33ff',
       borderRadius: 50,
     },
     textInput: {
@@ -172,7 +172,7 @@ const styles = StyleSheet.create({
       paddingHorizontal: 20,
     },
     text_header: {
-      color: '#420475',
+      color: '#9c33ff',
       fontWeight: 'bold',
       fontSize: 30,
     },
@@ -185,7 +185,7 @@ const styles = StyleSheet.create({
       marginLeft: 240,
     },
     forget: {
-      color: '#420475',
+      color: '#9c33ff',
       fontWeight: '700',
     },
     button: {
@@ -197,7 +197,7 @@ const styles = StyleSheet.create({
     },
     inBut: {
       width: '70%',
-      backgroundColor: '#420475',
+      backgroundColor: '#8aff33',
       alignItems: 'center',
       paddingHorizontal: 15,
       paddingVertical: 15,
@@ -206,10 +206,10 @@ const styles = StyleSheet.create({
     orTxt: {
         fontSize: 14,
         fontWeight: 'bold',
-        color: '#420475',
+        color: '#9c33ff',
     },
     inBut2: {
-      backgroundColor: '#420475',
+      backgroundColor: '#9c33ff',
       height: 65,
       width: 65,
       borderRadius: 15,

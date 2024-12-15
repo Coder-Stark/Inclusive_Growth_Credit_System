@@ -76,7 +76,7 @@ const HomeScreen = (props) => {
       <View style={styles.homeView}>
         <View style={styles.container1}>                            
           <Text style={styles.txt}>Bank Application</Text>
-          <Image source={require('../assets/jvlogo.png')} style={styles.logo}/>
+          <Image source={require('../assets/companylogo.png')} style={styles.logo}/>
           <Text style={{fontSize:20, fontWeight:"bold", color:"white", textAlign:"center"}}>JV Smileys Foundation</Text>
           <Text style={{fontSize:10, fontWeight:"bold", color:"gray", textAlign:"center"}}>One Step To Save Smile</Text>
         </View>
@@ -85,7 +85,12 @@ const HomeScreen = (props) => {
           <View style={styles.innerTxtView}>
             <Text style={styles.innerTxt1}>Together, We Can</Text>
             <Text style={styles.innerTxt2}>Build a world where every face has a SMILE.</Text>
-            <Button title="Join as Member" onPress={()=> props.navigation.navigate('JoinAsMember')}/>
+            <TouchableOpacity 
+              style={styles.button} 
+              onPress={() => props.navigation.navigate('JoinAsMember')}
+            >
+            <Text style={styles.buttonText}>Join as Member</Text>
+            </TouchableOpacity>
           </View>
         </View>
         <View style={styles.container3}>
@@ -259,7 +264,7 @@ const styles = StyleSheet.create({
   container1:{                          //JvNGO logo and some text
     width:"100%",
     height:180,
-    backgroundColor:"brown"
+    backgroundColor:"#9c33ff"
   },
   logo:{
     width:100,
@@ -297,6 +302,18 @@ const styles = StyleSheet.create({
     fontSize:30,
     fontWeight:"bold",
     color:"white",
+  },
+  button: {
+    backgroundColor: '#8aff33', // Green background
+    paddingVertical: 8,
+    paddingHorizontal: 10,
+    borderRadius: 5,
+    alignItems: 'center',
+  },
+  buttonText: {
+    color: 'black', // Black text color
+    fontSize: 20,
+    // fontWeight: 'bold',
   },
 
   container3:{                           //our imact , impact image, what we do

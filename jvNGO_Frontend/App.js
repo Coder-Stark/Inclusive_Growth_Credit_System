@@ -33,17 +33,17 @@ const TabNavigator = ()=>{
           tabBarIcon:()=>{
             return(
               // <Image source={require('./assets/icons/home.png')} style={{width:25, height:25}}/>
-              <Icons4 name="home" size={25} color="black"/>
+              <Icons4 name="home" size={25} color="#888"/>
             )
           }
         }} 
       />
-      <Tab.Screen name="Programs" component={OurProgram}
+      <Tab.Screen name="Program" component={OurProgram}
         options={{
           tabBarLabelStyle: { fontSize: 9.7, fontWeight: 'bold' },
           tabBarIcon:()=>{
             return(
-              <Icons4 name="network" size={25} color="black"/>
+              <Icons4 name="network" size={25} color="#888"/>
             )
           }
         }}
@@ -53,7 +53,7 @@ const TabNavigator = ()=>{
           tabBarLabelStyle: { fontSize: 10, fontWeight: 'bold' },
           tabBarIcon:()=>{
             return(
-              <Icons3 name="team" size={25} color="black" />
+              <Icons3 name="team" size={25} color="#888" />
             )
           }
         }}
@@ -63,7 +63,7 @@ const TabNavigator = ()=>{
           tabBarLabelStyle: { fontSize: 10, fontWeight: 'bold' },
           tabBarIcon:()=>{
             return(
-              <Icons2 name="policy" size={25} color="black" />
+              <Icons2 name="policy" size={25} color="#888" />
             )
           }
         }}
@@ -73,7 +73,7 @@ const TabNavigator = ()=>{
           tabBarLabelStyle: { fontSize: 10, fontWeight: 'bold' },
           tabBarIcon:()=>{
             return(
-              <Icons name="user" size={30} color="black" />  
+              <Icons name="user" size={30} color="#888" />  
             )
           }
         }}

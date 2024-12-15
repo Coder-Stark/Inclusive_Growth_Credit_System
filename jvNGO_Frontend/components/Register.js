@@ -92,7 +92,7 @@ const Register = (props) => {
   return (
     <ScrollView contentContainerStyle={styles.scrollContainer} showsVerticalScrollIndicator={false} keyboardShouldPersistTaps="always">
       <View style={styles.logoContainer}>
-        <Image style={styles.logo} source={require('../assets/jvlogo.png')}/>
+        <Image style={styles.logo} source={require('../assets/companylogo.png')}/>
       </View>
       <View style={styles.loginContainer}>
         <Text style={styles.text_header}>Register !!!</Text>
@@ -117,16 +117,16 @@ const Register = (props) => {
         {
           userType == 'Admin' ? 
           <View style={styles.action}>
-            <FontAwesome name="user-o" color="#420475" style={styles.smallIcon}/>
-            <TextInput placeholder='Enter Secret Key' style={styles.textInput} onChange={e=>setSecretKey(e.nativeEvent.text)}/>
+            <FontAwesome name="user-o" color="#9c33ff" style={styles.smallIcon}/>
+            <TextInput placeholderTextColor="#888" placeholder='Enter Secret Key' style={styles.textInput} onChange={e=>setSecretKey(e.nativeEvent.text)}/>
           </View> :
           null
         }
 
 
         <View style={styles.action}>
-            <FontAwesome name="user-o" color="#420475" style={styles.smallIcon}/>
-            <TextInput placeholder='Enter User Name' style={styles.textInput} onChange={e => handleName(e)} />
+            <FontAwesome name="user-o" color="#9c33ff" style={styles.smallIcon}/>
+            <TextInput placeholderTextColor="#888" placeholder='Enter User Name' style={styles.textInput} onChange={e => handleName(e)} />
             {
               name.length < 1 ? null : 
               nameVerify ? (<Feather name="check-circle" color="green" size={20}/>)
@@ -139,8 +139,8 @@ const Register = (props) => {
           (<Text style={{color:'red', marginLeft:20}}>Name should be more than 1 character</Text>)
         }
         <View style={styles.action}>
-            <Fontisto name="email" color="#420475" style={styles.smallIcon}/>
-            <TextInput placeholder='Enter Email Id' style={styles.textInput} onChange={e => handleEmail(e)}/>
+            <Fontisto name="email" color="#9c33ff" style={styles.smallIcon}/>
+            <TextInput placeholderTextColor="#888" placeholder='Enter Email Id' style={styles.textInput} onChange={e => handleEmail(e)}/>
             {
               email.length < 1 ? null : 
               emailVerify ? (<Feather name="check-circle" color="green" size={20}/>)
@@ -153,8 +153,8 @@ const Register = (props) => {
           (<Text style={{color:'red', marginLeft:20}}>Enter Proper Email Address</Text>)
         }
         <View style={styles.action}>
-            <Entypo name="mobile" color="#420475" style={styles.smallIcon}/>
-            <TextInput placeholder='Enter Mobile Number' style={styles.textInput} onChange={e => handleMobile(e)} maxLength={10}/>
+            <Entypo name="mobile" color="#9c33ff" style={styles.smallIcon}/>
+            <TextInput placeholderTextColor="#888" placeholder='Enter Mobile Number' style={styles.textInput} onChange={e => handleMobile(e)} maxLength={10}/>
             {
               mobile.length < 1 ? null : 
               mobileVerify ? (<Feather name="check-circle" color="green" size={20}/>)
@@ -167,8 +167,8 @@ const Register = (props) => {
           (<Text style={{color:'red', marginLeft:20}}>Enter Proper Mobile Number</Text>)
         }
         <View style={styles.action}>
-            <FontAwesome name="lock" color="#420475" style={styles.smallIcon}/> 
-            <TextInput placeholder='Enter Password' style={styles.textInput} onChange={e => handlePassword(e)} secureTextEntry={showPassword}/>
+            <FontAwesome name="lock" color="#9c33ff" style={styles.smallIcon}/> 
+            <TextInput placeholderTextColor="#888" placeholder='Enter Password' style={styles.textInput} onChange={e => handlePassword(e)} secureTextEntry={showPassword}/>
             <TouchableOpacity onPress={() => setShowPassword(!showPassword)}>
               {
                 password.length < 1 ? null :
@@ -214,8 +214,8 @@ const styles = StyleSheet.create({
     },
     textSign: {
       fontSize: 18,
-      fontWeight: 'bold',
-      color: 'white',
+      // fontWeight: 'bold',
+      color: 'black',
     },
     smallIcon: {
       marginRight: 10,
@@ -243,14 +243,15 @@ const styles = StyleSheet.create({
       paddingHorizontal: 15,
 
       borderWidth: 1,
-      borderColor: '#420475',
+      borderColor: '#9c33ff',
       borderRadius: 50,
     },
     textInput: {
       flex: 1,
       marginTop: -12,
-
-      color: '#05375a',
+      // fontWeight: 'bold',
+      color: 'black',
+      
     },
     loginContainer: {
       backgroundColor: '#fff',
@@ -264,7 +265,7 @@ const styles = StyleSheet.create({
       paddingHorizontal: 20,
     },
     text_header: {
-      color: '#420475',
+      color: '#9c33ff',
       fontWeight: 'bold',
       fontSize: 30,
     },
@@ -275,7 +276,7 @@ const styles = StyleSheet.create({
       marginRight: 10,
     },
     forget: {
-      color: '#420475',
+      color: '#9c33ff',
       fontWeight: '700',
     },
     button: {
@@ -287,7 +288,7 @@ const styles = StyleSheet.create({
     },
     inBut: {
       width: '70%',
-      backgroundColor: '#420475',
+      backgroundColor: '#8aff33',
       alignItems: 'center',
       paddingHorizontal: 15,
       paddingVertical: 15,
@@ -296,10 +297,10 @@ const styles = StyleSheet.create({
     orTxt: {
         fontSize: 14,
         fontWeight: 'bold',
-        color: '#420475',
+        color: '#9c33ff',
     },
     inBut2: {
-      backgroundColor: '#420475',
+      backgroundColor: '#9c33ff',
       height: 65,
       width: 65,
       borderRadius: 15,
@@ -335,7 +336,7 @@ const styles = StyleSheet.create({
     },
     radioButton_title: {
       fontSize: 20,
-      color: '#420475',
+      color: '#9c33ff',
     },
     radioButton_text: {
       fontSize: 16,
