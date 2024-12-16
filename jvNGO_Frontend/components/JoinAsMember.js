@@ -126,68 +126,68 @@ const JoinAsMember = () => {
     <ScrollView contentContainerStyle={styles.scrollContainer}>
       <View style={styles.homeView}>
         <View style={styles.container1}>                            
-          <Text style={styles.txt}>JV GROUP</Text>
-          <Image source={require('../assets/jvlogo.png')} style={styles.logo}/>
-          <Text style={{fontSize:20, fontWeight:"bold", color:"white", textAlign:"center"}}>JV Smileys Foundation</Text>
-          <Text style={{fontSize:10, fontWeight:"bold", color:"gray", textAlign:"center"}}>One Step To Save Smile</Text>
+          <Text style={styles.txt}>Poverty Alleviation Credit Platform</Text>
+          <Image source={require('../assets/companylogo.png')} style={styles.logo}/>
+          <Text style={{fontSize:20, fontWeight:"bold", color:"white", textAlign:"center"}}>Bridging Dreams with Opportunity.</Text>
         </View>
+
         <View style={styles.container2}>
           <View style={styles.formContainer}>
           <Text style={styles.text_header}>Join As Member</Text>
           <View style={styles.action}>
-              <FontAwesome name="user-o" color="brown" style={styles.smallIcon}/>
-              <TextInput placeholder='Enter Full Name' style={styles.textInput} value={name} onChange={e=>handleName(e)} />
+              <FontAwesome name="user-o" color="#9c33ff" style={styles.smallIcon}/>
+              <TextInput placeholderTextColor="#888" placeholder='Enter Full Name' style={styles.textInput} value={name} onChange={e=>handleName(e)} />
           </View>
           <View style={styles.action}>
-              <TextInput placeholder='Enter Father or Husband Name' style={styles.textInput} value={fatherHusbandName} onChange={e=>handleFatherHusbandName(e)}/>
+              <TextInput placeholderTextColor="#888" placeholder='Enter Father or Husband Name' style={styles.textInput} value={fatherHusbandName} onChange={e=>handleFatherHusbandName(e)}/>
           </View>
           <View style={styles.action}>
-              <TextInput placeholder='Enter (Married or Unmarried)' style={styles.textInput} value= {martialStatus} onChange={e=>handleMartialStatus(e)}/>
+              <TextInput placeholderTextColor="#888" placeholder='Enter (Married or Unmarried)' style={styles.textInput} value= {martialStatus} onChange={e=>handleMartialStatus(e)}/>
           </View>
           <View style={styles.action}>
-              <TextInput placeholder='Enter Your Gender (Male or Female)' style={styles.textInput} value= {gender} onChange={e=>handleGender(e)} />
+              <TextInput placeholderTextColor="#888" placeholder='Enter Your Gender (Male or Female)' style={styles.textInput} value= {gender} onChange={e=>handleGender(e)} />
           </View>
           <View style={styles.action}>
-              <TextInput placeholder='Enter Your Date of Birth In DD/MM/YYYY' style={styles.textInput} value= {dob} onChange={e=>handleDob(e)} />
+              <TextInput placeholderTextColor="#888" placeholder='Enter Your Date of Birth In DD/MM/YYYY' style={styles.textInput} value= {dob} onChange={e=>handleDob(e)} />
           </View>
           <View style={styles.action}>
-              <TextInput placeholder='Enter Your Email Id' style={styles.textInput} value= {email} onChange={e=>handleEmail(e)}/>
+              <TextInput placeholderTextColor="#888" placeholder='Enter Your Email Id' style={styles.textInput} value= {email} onChange={e=>handleEmail(e)}/>
           </View>
           <View style={styles.action}>
-              <TextInput placeholder='Enter Your Blood Group' style={styles.textInput} value= {bloodGroup} onChange={e=>handleBloodGroup(e)}/>
+              <TextInput placeholderTextColor="#888" placeholder='Enter Your Blood Group' style={styles.textInput} value= {bloodGroup} onChange={e=>handleBloodGroup(e)}/>
           </View>
           <View style={styles.action}>
-              <TextInput placeholder='Enter Your Full Address' style={styles.textInput} value = {fullAddress} onChange={e=>handleFullAddress(e)}/>
+              <TextInput placeholderTextColor="#888" placeholder='Enter Your Full Address' style={styles.textInput} value = {fullAddress} onChange={e=>handleFullAddress(e)}/>
           </View>
           <View style={styles.action}>
-              <TextInput placeholder='Enter Your Village or Ward' style={styles.textInput} value= {villageWard} onChange={e=>handleVillageWard(e)}/>
+              <TextInput placeholderTextColor="#888" placeholder='Enter Your Village or Ward' style={styles.textInput} value= {villageWard} onChange={e=>handleVillageWard(e)}/>
           </View>
           <View style={styles.action}>
-              <TextInput placeholder="Panchayat or NagarPanchayat Name" style={styles.textInput} value = {panchayatNagarParishadName} onChange={e=>handlePanchayatNagarParishadName(e)}/>
+              <TextInput placeholderTextColor="#888" placeholder="Panchayat or NagarPanchayat Name" style={styles.textInput} value = {panchayatNagarParishadName} onChange={e=>handlePanchayatNagarParishadName(e)}/>
           </View>
           <View style={styles.action}>
-              <TextInput placeholder='Enter your Block' style={styles.textInput} value = {block} onChange={e=>handleBlock(e)} />
+              <TextInput placeholderTextColor="#888" placeholder='Enter your Block' style={styles.textInput} value = {block} onChange={e=>handleBlock(e)} />
           </View>
           <View style={styles.action}>
-              <TextInput placeholder='Enter Your District' style={styles.textInput} value = {district} onChange={e=>handleDistrict(e)}/>
+              <TextInput placeholderTextColor="#888" placeholder='Enter Your District' style={styles.textInput} value = {district} onChange={e=>handleDistrict(e)}/>
           </View>
           <View style={styles.action}>
-              <TextInput placeholder='Enter Your State' style={styles.textInput} value = {state} onChange={e=>handleState(e)} />
+              <TextInput placeholderTextColor="#888" placeholder='Enter Your State' style={styles.textInput} value = {state} onChange={e=>handleState(e)} />
           </View>
           <View style={styles.action}>
-              <TextInput placeholder='Enter Your Pincode' style={styles.textInput} value = {pincode} onChange={e=>handlePincode(e)} />
+              <TextInput placeholderTextColor="#888" placeholder='Enter Your Pincode' style={styles.textInput} value = {pincode} onChange={e=>handlePincode(e)} />
           </View>
           <View style={styles.action}>
-              <TextInput placeholder='Enter Your Country' style={styles.textInput} value = {country} onChange={e=>handleCountry(e)} />
+              <TextInput placeholderTextColor="#888" placeholder='Enter Your Country' style={styles.textInput} value = {country} onChange={e=>handleCountry(e)} />
           </View>
           <View style={styles.action}>
-              <TextInput placeholder='Enter Your Mobile Number' style={styles.textInput} value= {mobile} onChange={e=>handleMobile(e)} />
+              <TextInput placeholderTextColor="#888" placeholder='Enter Your Mobile Number' style={styles.textInput} value= {mobile} onChange={e=>handleMobile(e)} />
           </View>
           <View style={styles.action}>
-              <TextInput placeholder='Enter Your Qualification' style={styles.textInput} value= {qualification} onChange={e=>handleQualification(e)} />
+              <TextInput placeholderTextColor="#888" placeholder='Enter Your Qualification' style={styles.textInput} value= {qualification} onChange={e=>handleQualification(e)} />
           </View>
           <View style={styles.action}>
-              <TextInput placeholder='Enter Your Occupation' style={styles.textInput} value= {occupation} onChange={e=>handleOccupation(e)} />
+              <TextInput placeholderTextColor="#888" placeholder='Enter Your Occupation' style={styles.textInput} value= {occupation} onChange={e=>handleOccupation(e)} />
           </View>
         </View>
         <View style={{margin:10}}>
@@ -195,9 +195,9 @@ const JoinAsMember = () => {
         </View>
         </View>
         <View style={styles.containerFooter}>
-          <Text style={styles.footTxt}>© JV Smileys Foundation 2024, Developed By</Text>
+          <Text style={styles.footTxt}>© Poverty Alleviation Credit Platform 2024, Developed By</Text>
           <TouchableOpacity onPress={shivam}>
-          <Text style={{fontWeight:"bold", color:"yellow"}}>Shivam Kumar</Text>
+          <Text style={{fontWeight:"bold", color:"#8aff33"}}>Shivam Kumar</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -215,20 +215,20 @@ const styles = StyleSheet.create({
     flex:1,
     alignItems:"center",
   },
-  container1:{                          //JvNGO logo and some text
+  container1:{                       
     width:"100%",
     height:180,
-    backgroundColor:"brown"
+    backgroundColor:"#9c33ff"
   },
   logo:{
-    width:100,
-    height:100,
+    width:120,
+    height:120,
     alignSelf:"center"
   },
   txt:{
-    fontSize:30,
+    fontSize:22,
     fontWeight:"bold",
-    color:"yellow",
+    color:"#8aff33",
     textAlign:"center",
   },
 
@@ -237,7 +237,7 @@ const styles = StyleSheet.create({
     alignItems:"center",
   },
   text_header: {
-    color: 'brown',
+    color: '#9c33ff',
     fontWeight: 'bold',
     fontSize: 30,
     width: 340,
@@ -251,7 +251,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
 
     borderWidth: 1,
-    borderColor: 'brown',
+    borderColor: '#9c33ff',
     borderRadius: 50,
   },
   smallIcon: {

@@ -10,182 +10,50 @@ const Team = () => {
     <ScrollView contentContainerStyle={styles.scrollContainer}>
       <View style={styles.homeView}>
         <View style={styles.container1}>                            
-          <Text style={styles.txt}>JV GROUP</Text>
-          <Image source={require('../assets/jvlogo.png')} style={styles.logo}/>
-          <Text style={{fontSize:20, fontWeight:"bold", color:"white", textAlign:"center"}}>JV Smileys Foundation</Text>
-          <Text style={{fontSize:10, fontWeight:"bold", color:"gray", textAlign:"center"}}>One Step To Save Smile</Text>
+          <Text style={styles.txt}>Poverty Alleviation Credit Platform</Text>
+          <Image source={require('../assets/companylogo.png')} style={styles.logo}/>
+          <Text style={{fontSize:20, fontWeight:"bold", color:"white", textAlign:"center"}}>Bridging Dreams with Opportunity.</Text>
         </View>
 
         <View style={styles.container2}>
-          <Text style={{fontSize:30, fontWeight:"bold", color:"purple", marginTop:10}}>Our Team's</Text>
-          <Text style={{fontSize:17, color:"gray", margin:10}}>Our team is comprised of dedicated volunteers who are passionate about helping the community. We work together to identify needs and create effective solutions that make a positive impact on the people we serve. Our committed members come from all walks of life, united by our common goal to better our society for future generations.</Text>
+          <Text style={{fontSize:30, fontWeight:"bold", color:"#9c33ff", marginTop:10}}>About Our Team</Text>
+          <Text style={styles.paragraph}>
+            Our team is driven by the passion to bring meaningful change to underserved communities. With expertise in development and design, we work collaboratively to create solutions that are both innovative and impactful, ensuring accessibility and inclusivity for all.
+          </Text>
+
+          {/* Founder 1 Paragraph */}
+          <Text style={styles.heading}>Shivam Kumar</Text>
+          <Text style={styles.paragraph}>
+            Shivam Kumar is a highly skilled developer with a strong background in creating scalable and user-friendly applications. His technical expertise and innovative approach ensure that every feature of the platform is robust and efficient, tailored to address the challenges faced by low-income individuals.
+          </Text>
+
+          {/* Founder 2 Paragraph */}
+          <Text style={styles.heading}>Rohit Kumar</Text>
+          <Text style={styles.paragraph}>
+            Rohit Kumar is an exceptional UI/UX designer, passionate about creating visually appealing and user-friendly designs. With a focus on seamless user experiences, they ensure that the platform is intuitive, accessible, and engaging for all users.
+          </Text>
         </View>
         <View style={styles.container3}>
-          <Text style={{fontSize:30, fontWeight:"bold", color:"brown", marginTop:10}}>Founder Member</Text>
+          <Text style={{fontSize:30, fontWeight:"bold", color:"#9c33ff", marginTop:10}}>Founder Member</Text>
           <View style={styles.innerContainer}>
             <View style={styles.row}>
               <View style={styles.smallBox}>
-                <Image source={require('../assets/teamMembers/founderMembers/founder1.png')} style={styles.founderImg}/>
-                <Text style={styles.smallBoxTxt}>Mr. Jitendra Kumar</Text>
-                <Text>Patron</Text>
+                <Image source={require('../assets/teamMembers/founderMembers/founder1.jpeg')} style={styles.founderImg}/>
+                <Text style={styles.smallBoxTxt}>Shivam Kumar</Text>
+                <Text>Developer</Text>
               </View>
               <View style={styles.smallBox}>
                 <Image source={require('../assets/teamMembers/founderMembers/founder2.png')} style={styles.founderImg}/>
-                <Text style={styles.smallBoxTxt}>Dr. Amit Kumar</Text>
-                <Text>Founder</Text>
+                <Text style={styles.smallBoxTxt}>Rohit Kumar</Text>
+                <Text>UI / UX Designer</Text>
               </View>
-            </View>
-            <View style={styles.row}>
-            <View style={styles.smallBox}>
-                <Image source={require('../assets/teamMembers/founderMembers/founder3.png')} style={styles.founderImg}/>
-                <Text style={styles.smallBoxTxt}>Poonam Kumari</Text>
-                <Text>Director</Text>
-              </View>
-              <View style={styles.smallBox}>
-                <Image source={require('../assets/teamMembers/founderMembers/founder4.png')} style={styles.founderImg}/>
-                <Text style={styles.smallBoxTxt}>Sumit Kumar</Text>
-                <Text>Founder Member</Text>
-              </View>
-            </View>
-            <View style={styles.smallBox}>
-                <Image source={require('../assets/teamMembers/founderMembers/founder5.png')} style={styles.founderImg}/>
-                <Text style={styles.smallBoxTxt}>Dr. Aishwarya kashyap</Text>
-                <Text>Founder Member</Text>
             </View>
           </View>
-        </View>
-        <View style={styles.container4}>
-          <Text style={{fontSize:30, fontWeight:"bold", color:"blue", marginTop:10}}>National Committee</Text>
-          <View style={styles.innerContainer}>
-            <View style={styles.row}>
-              <View style={styles.smallBox}>
-                <Image source={require('../assets/teamMembers/national/national1.png')} style={styles.founderImg}/>
-                <Text style={styles.smallBoxTxt2}>Rahul Kumar</Text>
-                <Text>National President</Text>
-              </View>
-              <View style={styles.smallBox}>
-                <Image source={require('../assets/teamMembers/national/national2.png')} style={styles.founderImg}/>
-                <Text style={styles.smallBoxTxt2}>Fatima</Text>
-                <Text>National Vice President</Text>
-              </View>
-            </View>
-            <View style={styles.row}>
-            <View style={styles.smallBox}>
-                <Image source={require('../assets/teamMembers/national/national3.png')} style={styles.founderImg}/>
-                <Text style={styles.smallBoxTxt2}>Priyanka Sharma</Text>
-                <Text>National Secretary</Text>
-              </View>
-              <View style={styles.smallBox}>
-                <Image source={require('../assets/teamMembers/national/national4.png')} style={styles.founderImg}/>
-                <Text style={styles.smallBoxTxt2}>Sourav Singh</Text>
-                <Text>National Vice President</Text>
-              </View>
-            </View>
-            <View style={styles.smallBox}>
-                <Image source={require('../assets/teamMembers/national/national5.png')} style={styles.founderImg}/>
-                <Text style={styles.smallBoxTxt2}>Kamlesh Tiwari</Text>
-                <Text>National General Secretary</Text>
-            </View>
-          </View>
-        </View>
-        <View style={styles.container5}>
-          <Text style={{fontSize:30, fontWeight:"bold", color:"orange", marginTop:10}}>Advisory Committee</Text>
-          <View style={styles.innerContainer}>
-            <View style={styles.row}>
-              <View style={styles.smallBox}>
-                <Image source={require('../assets/teamMembers/advisory/advisory1.png')} style={styles.founderImg}/>
-                <Text style={styles.smallBoxTxt3}>Drishti</Text>
-                <Text>State Secretary Maharashtra</Text>
-              </View>
-              <View style={styles.smallBox}>
-                <Image source={require('../assets/teamMembers/advisory/advisory2.png')} style={styles.founderImg}/>
-                <Text style={styles.smallBoxTxt3}>Mohit</Text>
-                <Text>State General Secretary Madhya Pradesh</Text>
-              </View>
-            </View>
-            <View style={styles.row}>
-              <View style={styles.smallBox}>
-                <Image source={require('../assets/teamMembers/advisory/advisory3.png')} style={styles.founderImg}/>
-                <Text style={styles.smallBoxTxt3}>Shalini</Text>
-                <Text>State Vice President Uttar Pradesh</Text>
-              </View>
-              <View style={styles.smallBox}>
-                <Image source={require('../assets/teamMembers/advisory/advisory4.png')} style={styles.founderImg}/>
-                <Text style={styles.smallBoxTxt3}>Manish Shukla</Text>
-                <Text>State President Uttar Pradesh</Text>
-              </View>
-            </View>
-            <View style={styles.row}>
-              <View style={styles.smallBox}>
-                <Image source={require('../assets/teamMembers/advisory/advisory5.png')} style={styles.founderImg}/>
-                <Text style={styles.smallBoxTxt3}>Anjali</Text>
-                <Text>State General Secetary West Bengal</Text>
-              </View>
-              <View style={styles.smallBox}>
-                <Image source={require('../assets/teamMembers/advisory/advisory6.png')} style={styles.founderImg}/>
-                <Text style={styles.smallBoxTxt3}>Ankit Sharma</Text>
-                <Text>State President Delhi</Text>
-              </View>
-            </View>
-            <View style={styles.row}>
-            <View style={styles.smallBox}>
-                <Image source={require('../assets/teamMembers/advisory/advisory7.png')} style={styles.founderImg}/>
-                <Text style={styles.smallBoxTxt3}>Sakshi</Text>
-                <Text>State Secretary Delhi</Text>
-              </View>
-              <View style={styles.smallBox}>
-                <Image source={require('../assets/teamMembers/advisory/advisory8.png')} style={styles.founderImg}/>
-                <Text style={styles.smallBoxTxt3}>Abhishek Kumar</Text>
-                <Text>State President Bihar</Text>
-              </View>
-            </View>
-            <View style={styles.row}>
-            <View style={styles.smallBox}>
-                <Image source={require('../assets/teamMembers/advisory/advisory9.png')} style={styles.founderImg}/>
-                <Text style={styles.smallBoxTxt3}>Priyanka Sharma</Text>
-                <Text>National Secretary</Text>
-              </View>
-              <View style={styles.smallBox}>
-                <Image source={require('../assets/teamMembers/advisory/advisory10.png')} style={styles.founderImg}/>
-                <Text style={styles.smallBoxTxt3}>Dushyant</Text>
-                <Text>State President Rajasthan</Text>
-              </View>
-            </View>
-            <View style={styles.smallBox}>
-                <Image source={require('../assets/teamMembers/advisory/advisory11.jpeg')} style={styles.founderImg}/>
-                <Text style={styles.smallBoxTxt3}>Ranjan Swain</Text>
-                <Text>State President Odisha</Text>
-            </View>
-          </View>
-        </View>
-        <View style={styles.container6}>
-          <Text style={{fontSize:30, fontWeight:"bold", color:"black", marginTop:10}}>JVSF GoodWill Ambassadors</Text>
-          <Text style={{fontSize:17, color:"gray", margin:10}}>Goodwill Ambassadors stand as the distinguished representatives of JV Smileys Foundation (JVSF), with their prominent status, often as celebrities, making them recognizable faces associated with our organization. These individuals play a crucial role in publicly championing and advocating for the values and objectives upheld by JVSF.{"\n"}
-          Our designated Goodwill Ambassador is acknowledged for their unwavering dedication to advancing the mission and goals of the JV Smileys Foundation. Collaborating closely with our team, they actively engage in activities to amplify awareness, mobilize resources, and champion the various initiatives that form the essence of our organization. Their exceptional ability to connect with individuals from diverse backgrounds and inspire collective action establishes them as an invaluable asset to our cause.</Text>
-        </View>
-        <View style={styles.container7}>
-          <Text style={{fontSize:30, fontWeight:"bold", color:"black", justifyContent:"center", alignItems:"center"}}>Current GoodWill Ambassadors</Text>
-
-
-          <Image source={require('../assets/teamMembers/ambassadors/ambassador1.png')} style={styles.memImg}/>
-          <Text style={styles.txtHead}>Ashima Narwal</Text>
-          <Text style={styles.text}>Miss Sydney Australia Elegance{"\n"}Miss India Global2015{"\n"}Actor</Text>
-
-          <Image source={require('../assets/teamMembers/ambassadors/ambassador2.png')} style={styles.memImg}/>
-          <Text style={styles.txtHead}>Kumar Kanhaiya Singh</Text>
-          <Text style={styles.text}>Actor{"\n"}Producer</Text>
-
-          <Text style={{fontSize:30, fontWeight:"bold", color:"black", justifyContent:"center", alignItems:"center", marginTop:10}}>Alumni GoodWill Ambassadors</Text>
-
-
-          <Image source={require('../assets/teamMembers/ambassadors/ambassador3.png')} style={styles.memImg}/>
-          <Text style={styles.txtHead}>Divya Rai</Text>
-          <Text style={styles.text}>Actor{"\n"}Writer</Text>
         </View>
         <View style={styles.containerFooter}>
-          <Text style={styles.footTxt}>© JV Smileys Foundation 2024, Developed By</Text>
+          <Text style={styles.footTxt}>© Poverty Alleviation Credit Platform 2024, Developed By</Text>
           <TouchableOpacity onPress={shivam}>
-          <Text style={{fontWeight:"bold", color:"yellow"}}>Shivam Kumar</Text>
+          <Text style={{fontWeight:"bold", color:"#8aff33"}}>Shivam Kumar</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -195,6 +63,7 @@ const Team = () => {
 
 export default Team
 
+//---------------------------------------------------------------------
 const styles = StyleSheet.create({
   scrollContainer: {
     flexGrow: 1,
@@ -203,28 +72,44 @@ const styles = StyleSheet.create({
     flex:1,
     alignItems:"center",
   },
-  container1:{                          //JvNGO logo and some text
+
+//----------------------------------------------------------------------
+  container1:{                          
     width:"100%",
     height:180,
-    backgroundColor:"brown"
+    backgroundColor:"#9c33ff"
   },
   logo:{
-    width:100,
-    height:100,
+    width:120,
+    height:120,
     alignSelf:"center"
   },
   txt:{
-    fontSize:30,
+    fontSize:22,
     fontWeight:"bold",
-    color:"yellow",
+    color:"#8aff33",
     textAlign:"center",
   },
 
+//------------------------------------------------------------------
   container2:{                         //Our Teams
     flex:1,
     alignItems:"center",
+    padding:10
   },
-
+  heading: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginTop: 20,
+    color: '#333',
+  },
+  paragraph: {
+    fontSize: 16,
+    lineHeight: 24,
+    marginTop: 10,
+    color: '#555',
+  },
+//------------------------------------------------------------------
   container3:{                         //Founder Member
     flex:1,
     justifyContent:"center",
@@ -241,66 +126,24 @@ const styles = StyleSheet.create({
   },
   smallBox:{
     width: 200,
-    height: 200,
+    height: 250,
     margin: 5,
     // backgroundColor: 'red',
     justifyContent: 'center',
     alignItems: 'center',
   },
   founderImg:{
-    width:150,
-    height:150,
+    width:160,
+    height:175,
     borderRadius:75,
   },
   smallBoxTxt:{
     fontSize: 15,
     fontWeight: 'bold',
-    color: 'brown',
+    color: '#9c33ff',
   },
 
-
-  container4:{                             //National Committee
-    flex:1,
-    alignItems:"center",
-  },
-  smallBoxTxt2:{
-    fontSize: 15,
-    fontWeight: 'bold',
-    color: 'blue',
-  },
-
-  container5:{                            //Advisory committee
-    flex:1,
-    alignItems:"center",
-  },
-  smallBoxTxt3:{
-    fontSize: 15,
-    fontWeight: 'bold',
-    color: 'orange',
-  },
-
-  container6:{                            //JVSF GoodWill Ambassador
-    flex:1,
-    alignItems:"center",
-  },
-
-  container7:{                             //Current & Alumini GoodWill Ambassador
-    flex:1,
-    alignItems:"center",
-  },
-  memImg:{
-    width:300,
-    height:300,
-  },
-  txtHead:{
-    fontSize: 30,
-    fontWeight: 'bold',
-    color: 'brown',
-  },
-  text:{
-    fontSize: 20,
-    color: 'gray',
-  },
+//------------------------------------------------------------------
   containerFooter:{
     flex:1,
     alignItems:"center",
