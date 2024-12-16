@@ -52,13 +52,12 @@ const Policies = () => {
             style={{
               fontSize: 30,
               fontWeight: 'bold',
-              color: 'red',
+              color: '#9c33ff',
               marginTop: 10,
             }}>
             Terms and Conditions
           </Text>
           <Text style={{fontSize: 17, color: 'gray', margin: 10}}>
-            <Text style={styles.txtBold}>Terms and Conditions{'\n'}</Text>
             <Text style={styles.txtBold}>Acceptance of Terms{'\n'}</Text>
             By accessing or using the Poverty Alleviation Credit Platform (PACP), you agree to these Terms and Conditions. If you do not agree, please discontinue use of our services immediately.{'\n'}
 
@@ -88,7 +87,7 @@ const Policies = () => {
             style={{
               fontSize: 30,
               fontWeight: 'bold',
-              color: 'green',
+              color: '#9c33ff',
               marginTop: 10,
             }}>
             Refund Policy

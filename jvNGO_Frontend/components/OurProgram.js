@@ -152,6 +152,7 @@ const styles = StyleSheet.create({
   container2:{                         //what we do
     flex:1,
     alignItems:"center",
+    padding:10
   },
   img:{
     width:200,
