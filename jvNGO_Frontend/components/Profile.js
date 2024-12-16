@@ -2,7 +2,9 @@ import { StyleSheet, Text, View, Button, ScrollView, TouchableOpacity, Image} fr
 import {Avatar} from 'react-native-paper';
 import LogOut from 'react-native-vector-icons/AntDesign';
 import Mobile from 'react-native-vector-icons/Entypo';
+import Deposite from 'react-native-vector-icons/FontAwesome6';
 import Email from 'react-native-vector-icons/MaterialCommunityIcons';
+import Detail from 'react-native-vector-icons/MaterialIcons';
 import {useNavigation} from '@react-navigation/native';
 import {useEffect, useState} from 'react';
 import axios from 'axios';
@@ -62,10 +64,11 @@ const Profile = () => {
             <View style={{marginTop: -100}}>
                 <Text style={styles.nameText}>{userData.name}</Text>
             </View>
+
             <View style={{marginTop: 20, marginHorizontal: 25}}>
                 <View style={styles.infoMain}>
                   <View style={styles.infoCont}>
-                    <View style={[styles.infoIconCont, {backgroundColor: '#ff9500'}]}>
+                    <View style={[styles.infoIconCont, {backgroundColor: '#9c33ff'}]}>
                       <Email name="email" size={24} style={{color: 'white'}} />
                     </View>
                     <View style={styles.infoText}>
@@ -75,34 +78,9 @@ const Profile = () => {
                   </View>
                 </View>
                 
-                {/* <View style={styles.infoMain}>
-                  <View style={styles.infoCont}>
-                    <View style={[styles.infoIconCont, {backgroundColor: '#0d7313'}]}>
-                      <Gender name="torsos-male-female" size={28} color="blue" style={{color: 'white'}}/>
-                    </View>
-                    <View style={styles.infoText}>
-                      <Text style={styles.infoSmall_Text}>Gender</Text>
-                      <Text style={styles.infoLarge_Text}>Male</Text>
-                    </View>
-                  </View>
-                </View>
-
-                      
                 <View style={styles.infoMain}>
                   <View style={styles.infoCont}>
-                    <View style={[styles.infoIconCont, {backgroundColor: '#774BBC'}]}>
-                      <Profession name="profile" size={24} style={{color: 'white'}} />
-                    </View>
-                    <View style={styles.infoText}>
-                      <Text style={styles.infoSmall_Text}>Profession</Text>
-                      <Text style={styles.infoLarge_Text}>Engineer</Text>
-                    </View>
-                  </View>
-                </View> */}
-
-                <View style={styles.infoMain}>
-                  <View style={styles.infoCont}>
-                    <View style={[styles.infoIconCont, {backgroundColor: '#f2276e'}]}>
+                    <View style={[styles.infoIconCont, {backgroundColor: '#9c33ff'}]}>
                       <Mobile name="mobile" size={24} style={{color: 'white'}} />
                     </View>
                     <View style={styles.infoText}>
@@ -112,6 +90,43 @@ const Profile = () => {
                     </View>
                   </View>
                 </View>
+
+                <View style={styles.infoMain}>
+                  <View style={styles.infoCont}>
+                    <View style={[styles.infoIconCont, {backgroundColor: '#9c33ff'}]}>
+                      <Deposite name="money-bill-trend-up" size={28} color="blue" style={{color: 'white'}}/>
+                    </View>
+                    <View style={styles.infoText}>
+                      <Text style={styles.infoSmall_Text}>Deposite @Intrest Rate</Text>
+                      <Text style={styles.infoLarge_Text}>₹20000  @7.5% p.a.</Text>
+                    </View>
+                  </View>
+                </View>
+
+                <View style={styles.infoMain}>
+                  <View style={styles.infoCont}>
+                    <View style={[styles.infoIconCont, {backgroundColor: 'red'}]}>
+                      <Deposite name="briefcase" size={28} color="blue" style={{color: 'white'}}/>
+                    </View>
+                    <View style={styles.infoText}>
+                      <Text style={styles.infoSmall_Text}>Loan Amount @Rate of Intrest</Text>
+                      <Text style={styles.infoLarge_Text}>₹18000  @12% p.a.</Text>
+                    </View>
+                  </View>
+                </View>
+
+                <View style={styles.infoMain}>
+                  <View style={styles.infoCont}>
+                    <View style={[styles.infoIconCont, {backgroundColor: '#0d7313'}]}>
+                      <Detail name="free-cancellation" size={28} color="blue" style={{color: 'white'}}/>
+                    </View>
+                    <View style={styles.infoText}>
+                      <Text style={styles.infoSmall_Text}>Loan Detail</Text>
+                      <Text style={styles.infoLarge_Text}>Tenure - 2 yr {'\n'}EMI - ₹847 {'\n'}17/12/2024 - 17/12/2026</Text>
+                    </View>
+                  </View>
+                </View>
+
             </View>
         </View>
     </ScrollView>
@@ -216,14 +231,14 @@ const styles = StyleSheet.create({
       borderColor: '#e6e6e6',
     },
     infoSmall_Text: {
-      fontSize: 13,
+      fontSize: 14,
       color: '#b3b3b3',
       fontWeight: '500',
     },
     infoLarge_Text: {
       color: 'black',
       fontSize: 18,
-      fontWeight: '600',
+      fontWeight: '500',
     },
     booksUploadedMain: {
       paddingHorizontal: 10,

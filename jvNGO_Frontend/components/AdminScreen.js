@@ -75,12 +75,11 @@ const AdminScreen = () => {
 
   return (
     <>
-      <View style={styles.container1}>                            
-        <Text style={styles.txt}>JV GROUP</Text>
-        <Image source={require('../assets/jvlogo.png')} style={styles.logo}/>
-        <Text style={{fontSize:20, fontWeight:"bold", color:"white", textAlign:"center"}}>JV Smileys Foundation</Text>
-        <Text style={{fontSize:10, fontWeight:"bold", color:"gray", textAlign:"center"}}>One Step To Save Smile</Text>
-      </View>
+        <View style={styles.container1}>                            
+          <Text style={styles.txt}>Poverty Alleviation Credit Platform</Text>
+          <Image source={require('../assets/companylogo.png')} style={styles.logo}/>
+          <Text style={{fontSize:20, fontWeight:"bold", color:"white", textAlign:"center"}}>Bridging Dreams with Opportunity.</Text>
+        </View>
       
       <View style={styles.container}>
         <View style={styles.userInfo}>
@@ -113,20 +112,20 @@ const styles = StyleSheet.create({
     flex:1,
     alignItems:"center",
   },
-  container1:{                          //JvNGO logo and some text
+  container1:{                       
     width:"100%",
     height:180,
-    backgroundColor:"brown"
+    backgroundColor:"#9c33ff"
   },
   logo:{
-    width:100,
-    height:100,
+    width:120,
+    height:120,
     alignSelf:"center"
   },
   txt:{
-    fontSize:30,
+    fontSize:22,
     fontWeight:"bold",
-    color:"yellow",
+    color:"#8aff33",
     textAlign:"center",
   },
   logoutIcon: {
@@ -134,7 +133,7 @@ const styles = StyleSheet.create({
     color: 'white',
     position: 'absolute',
     right: 2,
-    margin: 15,
+    margin: 30,
   },
   container: {
     flex: 1,
